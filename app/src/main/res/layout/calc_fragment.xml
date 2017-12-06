@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:layout_weight="0.5">-->
+
+        <!--<TextView-->
+            <!--android:background="@drawable/back"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Filp Tree"-->
+            <!--android:id="@+id/flipTreeButton"-->
+            <!--style="@style/CalcInputStyle"/>-->
+
+        <!--<TextView-->
+            <!--android:background="@drawable/back"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:text="Clear"-->
+            <!--android:id="@+id/clearButton"-->
+            <!--style="@style/CalcInputStyle"/>-->
+    <!--</LinearLayout>-->
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="7"
+            android:id="@+id/button7"
+            style="@style/CalcInputStyle"/>
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="8"
+            android:id="@+id/button8"  
+            style="@style/CalcInputStyle"/>
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="9"
+            android:id="@+id/button9"  
+            style="@style/CalcInputStyle"/>
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="*"
+            android:id="@+id/buttonMultiply"
+            style="@style/CalcInputStyle" />
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="("
+            android:id="@+id/buttonOpenBrace"
+            style="@style/CalcInputStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_height="0dp">
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="4"
+            android:id="@+id/button4" 
+            style="@style/CalcInputStyle"/>
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="5"
+            android:id="@+id/button5"
+            style="@style/CalcInputStyle" />
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="6"
+            android:id="@+id/button6"  
+            style="@style/CalcInputStyle"/>
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/buttonDivide"
+            android:text="÷"
+            style="@style/CalcInputStyle" />
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text=")"
+            android:id="@+id/buttonCloseBrace"  
+            style="@style/CalcInputStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:id="@+id/button1"  
+            style="@style/CalcInputStyle"/>
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2"
+            android:id="@+id/button2" 
+            style="@style/CalcInputStyle"/>
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="3"
+            android:id="@+id/button3"
+            style="@style/CalcInputStyle"/>
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+"
+            android:id="@+id/buttonAdd"
+            style="@style/CalcInputStyle"/>
+
+        <TextView
+            android:background="@drawable/back"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:textStyle="bold"
+            android:text="‹"
+            android:id="@+id/buttonBack"
+            style="@style/CalcInputStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:background="@drawable/back"
+            android:id="@+id/button0"
+            android:layout_height="match_parent"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="0"
+            style="@style/CalcInputStyle" />
+
+        <TextView
+            android:id="@+id/buttonDecimalPlace"
+            android:background="@drawable/back"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="."
+            android:gravity="center"
+            style="@style/CalcInputStyle"
+            android:layout_weight="1"/>
+
+        <TextView android:background="@drawable/back"
+                  android:id="@+id/buttonPower"
+                  android:layout_height="match_parent"
+                  android:layout_width="fill_parent"
+                  android:layout_weight="1"
+                  android:gravity="center"
+                  android:text="^"
+                  style="@style/CalcInputStyle"/>
+
+        <TextView
+
+            android:text="-"
+            android:id="@+id/buttonSubtract"
+            android:background="@drawable/back"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/CalcInputStyle"/>
+
+        <TextView
+            android:id="@+id/buttonEquals"
+            android:background="@drawable/back"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:text="="
+            android:gravity="center"
+            android:layout_weight="1"
+            style="@style/CalcInputStyle"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

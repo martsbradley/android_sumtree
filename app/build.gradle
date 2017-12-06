@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        SumtreeKey {
+            keyAlias 'SumtreeKey'
+            keyPassword 'xPch$;ci1w.39d'
+            storeFile file('/home/martin/Software/Android/SumtreeAndroid/SumtreeKeyStore.jks')
+            storePassword 'F5$x8fex9wYxT'
+        }
+    }
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+    defaultConfig {
+        // ADVERTS
+        applicationId "com.mbradley.sumtree.view"
+
+        minSdkVersion 16
+        targetSdkVersion 24
+        //  version code will == versionName with the . left out.
+        versionCode 15
+        versionName "1.5"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.SumtreeKey
+        }
+        debug {
+            signingConfig signingConfigs.SumtreeKey
+        }
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+        dexInProcess = false
+
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:1.10.19'
+    compile 'org.apache.commons:commons-lang3:3.0'
+    androidTestCompile 'com.android.support.test:runner:0.4.1'
+    androidTestCompile 'com.android.support.test:rules:0.4.1'
+    // Optional -- UI testing with Espresso
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:2.2.2'
+    // Espresso-Intents is only compatible with Espresso 2.1+ and the testing support library 0.3 so make sure you update those lines as well:
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support.test:rules:0.5'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    // androidTestCompile 'org.jmockit:jmockit:1.23'
+    androidTestCompile 'org.mockito:mockito-core:1.10.19'
+    androidTestCompile 'com.google.dexmaker:dexmaker:1.2'
+    androidTestCompile 'com.google.dexmaker:dexmaker-mockito:1.2'
+    compile 'com.android.support:design:24.1.0'
+    compile 'com.android.support:appcompat-v7:24.1.0'
+
+    androidTestCompile 'com.android.support:support-annotations:24.1.0'
+    compile 'com.android.support:percent:24.0.0'
+}

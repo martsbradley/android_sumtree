@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "468734830429",
+    "project_id": "firebase-droidcalculator"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468734830429:android:4a65b66ff0c7428f",
+        "android_client_info": {
+          "package_name": "com.mbradley.sumtree.view"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPoKHEzo7HZP0s2NV1uXXUeBLLs-vkQXM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-82689045-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
