@@ -5,7 +5,8 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.mbradley.sumtree.model.key.KeyValue;
 import com.mbradley.sumtree.sumdisplay.SumDisplay;
@@ -18,7 +19,7 @@ import com.mbradley.sumtree.view.treeFragment.KeyHandlerThread;
 import com.mbradley.sumtree.view.treeFragment.TreeFragment;
 
 
-public class CalculatorActivity extends AppCompatActivity 
+public class CalculatorActivity extends AppCompatActivity
                 implements CalculatorInputFragment.CalcPadInfo,
         SumDisplay
 {

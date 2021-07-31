@@ -179,4 +179,46 @@ public class CalculatorDialogModelTest
         result = model.keyPressed(KeyValue.DIVIDE);
         assertFalse(result.expressionUpdated());
     }
+
+    @Test
+    public void numberDotNumberDot()
+    {
+        KeyPressOutcome result = model.keyPressed(KeyValue.NINE);
+
+        model.setPreviousExpression(result.getExpression());
+        result = model.keyPressed(KeyValue.DOT);
+
+        assertEquals("9.", result.getExpression());
+
+        model.setPreviousExpression(result.getExpression());
+
+        result = model.keyPressed(KeyValue.NINE);
+        assertEquals("9.9", result.getExpression());
+        model.setPreviousExpression(result.getExpression());
+        result = model.keyPressed(KeyValue.DOT);
+
+        assertFalse(result.expressionUpdated()); // This is good.
+    }
+
+    @Test
+    public void numberPowerPower() {
+        KeyPressOutcome result = model.keyPressed(KeyValue.NINE);
+
+        model.setPreviousExpression(result.getExpression());
+        result = model.keyPressed(KeyValue.POWER);
+        assertTrue(result.expressionUpdated());
+        assertEquals("9^", result.getExpression());
+
+        model.setPreviousExpression(result.getExpression());
+
+        result = model.keyPressed(KeyValue.POWER);
+        assertEquals("9^^", result.getExpression());// Yea, this is unexpected.
+    }
+
+    @Test
+    public void endsDecimal()
+    {
+        model.setPreviousExpression("1.1");
+        assertTrue(model.endsWithDecimal());
+    }
 }

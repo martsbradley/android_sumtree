@@ -167,9 +167,9 @@ public class CalculatorDialogModel
         return handleDecimal;
     }
 
-    private boolean endsWithDecimal()
+    public boolean endsWithDecimal()
     {
-        Pattern pattern = Pattern.compile(".*\\d\\.\\d+$");
+        Pattern pattern = Pattern.compile(".*\\d\\.\\d*$");
         Matcher x = pattern.matcher(mPreviousExpression);
         return x.matches();
     }

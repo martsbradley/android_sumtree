@@ -5,12 +5,13 @@ import android.content.DialogInterface;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v7.app.AlertDialog;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.appcompat.app.AlertDialog;
+import androidx.core.view.MotionEventCompat;
 
 import com.mbradley.sumtree.layout.EOrientation;
 import com.mbradley.sumtree.layout.shape.DivideByZeroException;

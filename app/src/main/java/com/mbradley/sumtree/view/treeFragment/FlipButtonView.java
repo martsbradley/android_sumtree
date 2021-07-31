@@ -4,12 +4,13 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.support.v4.content.res.ResourcesCompat;
-import android.support.v4.view.MotionEventCompat;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
+
+import androidx.core.content.res.ResourcesCompat;
+import androidx.core.view.MotionEventCompat;
 
 import com.mbradley.sumtree.sumdisplay.TreeButtonHandler;
 import com.mbradley.sumtree.view.R;
